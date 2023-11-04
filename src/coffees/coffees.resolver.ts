@@ -21,7 +21,8 @@ export class CoffeesResolver {
 
   @Mutation('createCoffee')
   async create(
-    @Args('createCoffeeInput') createCoffeeInput: GraphQLTypes.CreateCoffeeInput,
+    @Args('createCoffeeInput')
+    createCoffeeInput: GraphQLTypes.CreateCoffeeInput,
   ): Promise<GraphQLTypes.Coffee> {
     return this.coffeesService.create(createCoffeeInput);
   }
