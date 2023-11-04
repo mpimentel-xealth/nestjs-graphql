@@ -32,7 +32,20 @@
 $ npm install
 ```
 
-## Running the app
+## Developer setup
+
+```bash
+# In one window
+$ ./generate-types.sh
+
+# Another window
+$ ./dependencies.sh
+
+# Another window
+$ ./devserver.sh
+```
+
+## Other ways to run the app
 
 ```bash
 # development
